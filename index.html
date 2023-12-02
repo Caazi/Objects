@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+</head>
+<body>
+    <form>
+        Fistname:<input type="text" id="fname"><br>
+        Lastname:<input type="text" id="lname"><br>
+        Age:<input type="number" id="age"><br>
+        Gender:<input type="text" id="gender"><br>
+        Birthdate:<input type="date" id="bdate"><br>
+        Address:<input type="text" id="address"><br>
+        Email:<input type="email" id="mail"><br>
+        <input type="submit" onclick="myfunction()">
+    </form>
+    <script>
+        function myfunction(){
+        let student = {}
+        student.fname = document.getElementById('fname').value;
+        student.lname = document.getElementById('lname').value,
+        student.age = document.getElementById('age').value,
+        student.gender = document.getElementById('gender').value,
+        student.bdate = document.getElementById('bdate').value,
+        student.address = document.getElementById('address').value,
+        student.email = document.getElementById('mail').value,
+        student.info = function() {document.write(this.fname + ' ' + this.lname + ' ' + this.age + ' '+ this.gender + ' '+ this.bdate + ' '+ this.address + ' '+ this.email);}
+        student.info()
+    }
+    </script>
+</body>
+</html>
